@@ -87,8 +87,7 @@ function placeOrder(cardNumber) {
     console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)
     delete cart.
     for (var i = 0; i < delete cart.length; i++) {
-      var key = Object.keys(cart[i])
-      delete cart[i]
+      cart.pop()
     }
   }
 }

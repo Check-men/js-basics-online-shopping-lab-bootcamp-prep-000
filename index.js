@@ -88,7 +88,7 @@ function placeOrder(cardNumber) {
     delete cart.
     for (var i = 0; i < delete cart.length; i++) {
       var key = Object.keys(cart[i])
-      delete cart[i][key]
+      delete cart[i]
     }
   }
 }
